@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Personal portfolio</title>
+    <script src="https://kit.fontawesome.com/c0d8ff01fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#serve">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <div class="bar">
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <div class="header-text">
+            <p>Coder | Problem Solver</p>
+            <h1>Hi, I'm <span>Sai Raja</span><br>Shanigarapu</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <h1 class="sub"><span>About</span> Me</h1>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('who')">Who Am I?</p>
+            <p class="tab-links" onclick="opentab('info')">Personal Info</p>
+            <p class="tab-links" onclick="opentab('expert')">My Expertise</p>
+        </div>
+        <div class="tab-contents active-tab" id="who">
+            <h1 class="subtitle">A Developer <span>&</span> Problem Solver</h1>
+            <p class="subtext">I am a dedicated, hardworking, and proactive Computer Science Engineer with a strong background in Coding, Problem-solving, and Web development. I have good work experience in dealing with data, Visualizing the data, and drawing insights from it. I am currently looking for an opportunity to utilise my technical skills in a challenging working environment and become a valuable asset to the organisation that I work for.</p>
+        </div>
+        <div class="tab-contents" id="info">
+            <ul>
+                <li><span>BirthDate: </span>19-August-2002</li>
+                <li><i class="fa-solid fa-envelope"></i> <span>Email: </span>shanigarapusairaja2002@gmail.com</li>
+                <li><i class="fa-solid fa-square-phone"></i><span> Phone: </span>+918555080811</li>
+                <li><i class="fa-solid fa-link"></i><span> LinkedIn: </span>https://www.linkedin.com/in/
+                    shanigarapu-sairaja-a87980231/</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="expert">
+            <ul>
+                <li><i class="fa-solid fa-code" id="code"></i> Web Development</li>
+                <li><i class="fa-solid fa-user-robot" id="code"></i> Machine Learning</li>
+            </ul>
+        </div>
+    </div>
+</div>    
+<div class="about1" id="serve">
+    <div class="container">
+        <h1 class="sub"> My <span>Resume</span></h1>
+        <div class="tab-titles">
+            <p class="tab-links active-link1" onclick="opentab1('education')">Education</p>
+            <p class="tab-links" onclick="opentab1('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab1('expert1')">Expertise</p>
+        </div>
+        <div class="tab-contents active-tab1" id="education">
+            <ul>
+                <li><span>2020-present</span><br><i>B-Tech Bachelor of Technology</i> <br> I am pursuing my B-Tech in Sreenidhi Institute of Science and Technology as a Computer Science student. I have a CGPA of 8.84.</li>
+                <li><span>2018-2020</span><br><i>Intermediate</i> <br>
+                    I have done my Intermediate in Alphores Junior College, Karimnagar. I have 99% in my intermediate.</li>
+                <li><span>2017-2018</span><br> <i>Schooling</i> <br>
+                    I have done my schooling in Tetrahedron Model School, Huzurabad. I have scored 98%.</li>
+            </ul>    
+        </div>
+        <div id="ab1">
+            <div class="tab-contents" id="skills">
+                <div class="row">
+                    <div class="skills-col-1">
+                        <ul>
+                            <li><h2><span>Technical</span> Skills</h2></li>
+                            <li>C Language <progress max="100" value="90"></progress></li>
+                            <li>CPP <progress max="100" value="80"></progress></li>
+                            <li>JAVA <progress max="100" value="80"></progress></li>
+                            <li>Python <progress max="100" value="90"></progress></li>
+                            <li>Data Structures & Algorithms<progress max="100" value="75"></progress></li>
+                            <li>SQL <progress max="100" value="90"></progress></li>
+                            <li>HTML<progress max="100" value="90"></progress></li>
+                            <li>CSS <progress max="100" value="90"></progress></li>
+                            <li>JS <progress max="100" value="80"></progress></li>
+                        </ul> 
+                    </div>
+                    <div class="skills-col-2">
+                        <ul>
+                            <li><h2><span>Soft</span> Skills</h2></li>
+                            <li>Communication <progress max="100" value="80"></progress></li>
+                            <li>Problem Solving <progress max="100" value="80"></progress></li>
+                            <li>Teamwork <progress max="100" value="80"></progress></li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="tab-contents" id="expert1">
+            <ul>
+                <li><span>2022</span><br><i>AWS Cloud Virtual Internship</i> <br> It is about learning cloud services provided by AWS service, Creating database and Uses of AWS services.</li>
+                <li><span>2022</span><br><i>Paper work</i> <br>
+                    Written a paper on Heart Disease prediction using Machine Learning.</li>
+                <li><span>2022</span><br> <i>TCS Certification</i> <br>
+                    Certified from TCS MasterCraft Academy on Dataplus Overviewing</li>
+                <li><span>2020-2021</span><br> <i>Internship</i> <br> Intern in Microsoft on Heart Disease prediction using Data Science</li>
+            </ul>    
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub"> My <span>Work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./gymweb.jpg" alt="">
+                <div class="layer">
+                    <h3>Fiteness Website</h3>
+                    <p>The website gives information on various exercies.</p>
+                    <a href="https://ssrtechsfitness.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+               <img src="./game.jpg" alt="">
+               <div class="layer">
+                <h3>Guess The Number</h3>
+                <p>A small game with 5 levels in guessing a number with increasing difficulty.</p>
+                <a href="https://heroic-sherbet-91bfa6.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="./ML.jpg" alt="">
+                <div class="layer">
+                    <h3>Classification of Cats and Dogs Using Convulutional Neural Networks</h3>
+                    <p>This is to classify cats and dogs based on the image using Maching Learning.</p>
+                    <a href="https://github.com/sairaja2002/DWDM-project" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub"><span>Contact</span> Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shanigarapusairaja2002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8555080811</p>
+                <div class="social-icons">
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/shanigarapusairaja/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/ShanigarapuSai9" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="./New Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#9400 Sai Raja. Made by myself</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    function opentab1(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link1");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab1");
+        }
+        event.currentTarget.classList.add("active-link1");
+        document.getElementById(tabname).classList.add("active-tab1");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0HRkC0XXTgVjrCjWS8MASM-iyCwv0M_uoArIqziLCuc5DeNpX870yH_VmevZms4sG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
